@@ -17,12 +17,19 @@
 
 <body>
 
-    <h1>Hello World</h1>
+    <h1>Questi sono i film che abbiamo in database:</h1>
 
-    <div class="container d-flex flex-wrap">
+    <div class="container">
         @foreach ($movies as $movie)
-            <div class="card ">
-                {{ $movie['title'] }}
+            <div class="card">
+                <ul>
+                    <li>{{ $movie['title'] }}</li>
+                    <li>{{ $movie['original_title'] }}</li>
+                    <li>{{ $movie['nationality'] }}</li>
+                    <li>{{ $movie['original_title'] }}</li>
+                    <li>{{ $movie['date'] }}</li>
+                    <li>{{ $movie['vote'] }}</li>
+                </ul>
             </div>
         @endforeach
     </div>
