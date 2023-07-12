@@ -12,6 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Http\Controllers\mainController as mainController;
+use App\Http\Controllers\MainController as MainController;
 
-Route::get('/', [mainController::class, 'index']);
+Route::get('/', [MainController::class, 'index']);
