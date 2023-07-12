@@ -19,11 +19,15 @@
 
     <h1>Hello World</h1>
 
-    <ul>
+    <div class="container d-flex flex-wrap">
         @foreach ($movies as $movie)
-            <li>{{ $movie['title'] }}</li>
+            <div class="card ">
+                {{ $movie['title'] }}
+            </div>
         @endforeach
-    </ul>
+    </div>
+
+
 
 
 </body>
